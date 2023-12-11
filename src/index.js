@@ -4,6 +4,7 @@ import analyzer from "./analyzer.js";
 
 const userInput = document.querySelector('[name="user-input"]');
 const wordCount = document.querySelector('[data-testid="word-count"]');
+const characterCount = document.querySelector('[data-testid="character-count"]')
 
 if (userInput === null) {
   alert("ups, No encontre la entrada del usuario");
@@ -16,4 +17,5 @@ userInput.addEventListener("input", function () {
   // obtengoo el contenido actual de 'wordCount', separarlo por ":" y obtener la primera parte
   // agrego el resultado del análisis de palabras realizado por 'analyzer.getWordCount(text)'
   wordCount.textContent = wordCount.textContent.split(":").at(0) + ": " + analyzer.getWordCount(text);
+  characterCount.textContent = characterCount.textContent.split(":").at(0) + ": " + analyzer.getCharacterCount(text);
 });

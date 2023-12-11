@@ -192,7 +192,7 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de HTML semántico**
 
-  - [ ] La aplicación tiene un encabezado conformado por un
+  - [*] La aplicación tiene un encabezado conformado por un
   [`<header>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
   que es padre de un
   [`<h1>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1)

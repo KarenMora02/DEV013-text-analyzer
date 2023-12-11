@@ -4,7 +4,15 @@ import analyzer from "./analyzer.js";
 
 const userInput = document.querySelector('[name="user-input"]');
 const wordCount = document.querySelector('[data-testid="word-count"]');
-const characterCount = document.querySelector('[data-testid="character-count"]')
+const characterCount = document.querySelector(
+  '[data-testid="character-count"]'
+);
+const characterNoSpacesCount = document.querySelector(
+  '[data-testid="character-no-spaces-count"]'
+);
+const numberCount = document.querySelector('[data-testid="number-count"]');
+const numberSum = document.querySelector('[data-testid="number-sum"]');
+const wordLengthAverage = document.querySelector('[data-testid="word-length-average"]');
 
 if (userInput === null) {
   alert("ups, No encontre la entrada del usuario");
@@ -16,6 +24,31 @@ userInput.addEventListener("input", function () {
   const text = userInput.value;
   // obtengoo el contenido actual de 'wordCount', separarlo por ":" y obtener la primera parte
   // agrego el resultado del análisis de palabras realizado por 'analyzer.getWordCount(text)'
-  wordCount.textContent = wordCount.textContent.split(":").at(0) + ": " + analyzer.getWordCount(text);
-  characterCount.textContent = characterCount.textContent.split(":").at(0) + ": " + analyzer.getCharacterCount(text);
+  wordCount.textContent =
+    wordCount.textContent.split(":").at(0) + ": " + analyzer.getWordCount(text);
+  characterCount.textContent =
+    characterCount.textContent.split(":").at(0) +
+    ": " +
+    analyzer.getCharacterCount(text);
+
+  characterNoSpacesCount.textContent =
+    characterNoSpacesCount.textContent.split(":").at(0) +
+    ": " +
+    analyzer.getCharacterNoSpacesCount(text);
+
+  numberCount.textContent =
+    numberCount.textContent.split(":").at(0) +
+    ": " +
+    analyzer.getNumberCount(text);
+
+  numberSum.textContent =
+    numberSum.textContent.split(":").at(0) +
+    ": " +
+    analyzer.getNumberSum(text);
+
+  wordLengthAverage.textContent =
+    wordLengthAverage.textContent.split(":").at(0) +
+    ": " +
+    analyzer.getAverageWordLength(text); 
+
 });

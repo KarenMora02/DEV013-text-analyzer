@@ -12,8 +12,15 @@ const characterNoSpacesCount = document.querySelector(
 );
 const numberCount = document.querySelector('[data-testid="number-count"]');
 const numberSum = document.querySelector('[data-testid="number-sum"]');
-const wordLengthAverage = document.querySelector('[data-testid="word-length-average"]');
-
+const wordLengthAverage = document.querySelector(
+  '[data-testid="word-length-average"]'
+);
+const resetButton = document.getElementById("reset-button");
+resetButton.addEventListener("click",function(){
+  userInput.value = ""
+  const event = new Event("input");
+  userInput.dispatchEvent(event);
+})
 if (userInput === null) {
   alert("ups, No encontre la entrada del usuario");
 }
@@ -42,13 +49,10 @@ userInput.addEventListener("input", function () {
     analyzer.getNumberCount(text);
 
   numberSum.textContent =
-    numberSum.textContent.split(":").at(0) +
-    ": " +
-    analyzer.getNumberSum(text);
+    numberSum.textContent.split(":").at(0) + ": " + analyzer.getNumberSum(text);
 
   wordLengthAverage.textContent =
     wordLengthAverage.textContent.split(":").at(0) +
     ": " +
-    analyzer.getAverageWordLength(text); 
-
+    analyzer.getAverageWordLength(text);
 });

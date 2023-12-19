@@ -1,0 +1,93 @@
+* {
+  font-family: "Alegrey";
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #bdbdbd;
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../imagenes/imagen.jpg");
+  background-size: 120% 115%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  gap: 1rem;
+}
+
+header,
+form {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+h3 {
+  text-align: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+  width: 600px;
+  gap: 1rem;
+  flex-flow: wrap;
+}
+
+li {
+  white-space: nowrap;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.9px);
+  -webkit-backdrop-filter: blur(12.9px);
+  border: 1px solid rgb(255, 252, 252);
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+}
+
+#reset-button {
+  color: black;
+  white-space: nowrap;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.9px);
+  -webkit-backdrop-filter: blur(12.9px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  width: auto;
+  height: 50px;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 10px;
+
+  box-shadow: 50px 25px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  width: 70%;
+  height: 300px;
+  font-size: 16px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+}

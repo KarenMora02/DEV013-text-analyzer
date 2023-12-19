@@ -254,26 +254,26 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de selectores de CSS**
 
-  - [ ] La aplicación usa
+  - [x] La aplicación usa
   [`selectores CSS de tipo`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#type_selectors)
   para darle estilo al
   [`<header>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
   y al
   [`<footer>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer).
 
-  - [ ] La aplicación usa
+  - [x] La aplicación usa
   [`selectores CSS de class`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#class_selectors)
   para darle estilo a los
   [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
   descrito anteriormente.
 
-  - [ ] La aplicación usa
+  - [x] La aplicación usa
   [`selectores de atributo`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors)
   para darle estilo al
   [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
   usando el atributo `name`.
 
-  - [ ] La aplicación usa
+  - [x] La aplicación usa
   [`selectores CSS de ID`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#id_selectors)
   para darle estilo al
   [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
@@ -281,7 +281,7 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Modelo de caja (box model): border, margen, padding**
 
-  - [ ] Las
+  - [x] Las
   [`clases css`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#class_selectors)
   de los
   [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
@@ -298,26 +298,26 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de selectores del DOM**
 
-  - [ ] La aplicación usa el
+  - [x] La aplicación usa el
   [`selector del DOM querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
 
-  - [ ] La aplicación usa el
+  - [x] La aplicación usa el
   [`selector del DOM getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById).
 
 * **Manejo de eventos del DOM (listeners, propagación, delegación)**
 
-  - [ ] La aplicación registra un
+  - [x] La aplicación registra un
   [Event Listener](https://developer.mozilla.org/en/docs/Web/API/EventTarget/addEventListener)
   para escuchar el evento `input` del `<textarea>` para actualizar las métricas
   cuando se haga escriba en el cuadro de texto.
 
-  - [ ] La aplicación registra un
+  - [x] La aplicación registra un
   [Event Listener](https://developer.mozilla.org/en/docs/Web/API/EventTarget/addEventListener)
   para escuchar el evento `click` del `<button>` que limpia el contenido de la
   caja de texto.
 
 * **Manipulación dinámica del DOM**
-  - [ ] La aplicación actualiza el atributo
+  - [x] La aplicación actualiza el atributo
   [`textContent`](https://developer.mozilla.org/es/docs/Web/API/Node/textContent)
   o
   [`innerHTML`](https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML)
@@ -348,44 +348,44 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
 
-  - [ ] La aplicación usa el statement
+  - [x] La aplicación usa el statement
   [`if..else`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
   para evaluar condiciones.
 
 * **Uso de bucles/ciclos (while, for, for..of)**
 
-  - [ ] La aplicación usa el statement
+  - [x] La aplicación usa el statement
   [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
   para crear un bucle.
 
 * **Funciones (params, args, return)**
 
-  - [ ] El objeto `analyzer` contiene un método `getWordCount` para calcular el
+  - [x] El objeto `analyzer` contiene un método `getWordCount` para calcular el
   recuento de palabras de un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getCharacterCount` para calcular
+  - [x] El objeto `analyzer` contiene un método `getCharacterCount` para calcular
   el recuento de caracteres de un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getCharacterCountExcludingSpaces`
+  - [x] El objeto `analyzer` contiene un método `getCharacterCountExcludingSpaces`
   para calcular el recuento de caracteres excluyendo espacios y signos de
   puntuación de un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getNumbersCount` para contar
+  - [x] El objeto `analyzer` contiene un método `getNumbersCount` para contar
   cúantos números hay en un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getNumbersSum` para la suma
+  - [x] El objeto `analyzer` contiene un método `getNumbersSum` para la suma
   longitud media de los números en un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getAverageWordLength` para
+  - [x] El objeto `analyzer` contiene un método `getAverageWordLength` para
   calcular la longitud media de las palabras en un texto.
 
 * **Pruebas unitarias (unit tests)**
 
-  - [ ] Se pasan todas las pruebas unitarias.
+  - [x] Se pasan todas las pruebas unitarias.
 
 * **Módulos de ECMAScript (ES Modules)**
 
-  - [ ] La aplicación usan
+  - [x] La aplicación usan
   [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
   y
   [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
@@ -393,11 +393,11 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de linter (ESLINT)**
 
-  - [ ] Al ejecutar el linter no se muestran errores de formato y estilo.
+  - [x] Al ejecutar el linter no se muestran errores de formato y estilo.
 
 * **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
-  - [ ] En el código se utilizan identificadores descriptivos para variables
+  - [x] En el código se utilizan identificadores descriptivos para variables
   y funciones.
 
 ### Control de Versiones (Git y GitHub)
@@ -418,7 +418,7 @@ relacionados con cada objetivo de aprendizaje.
 
 * **GitHub: Despliegue con GitHub Pages**
 
-  - [ ] La aplicación está desplegada en Github Pages.
+  - [x] La aplicación está desplegada en Github Pages.
 
 ### Centrado en la usuaria
 

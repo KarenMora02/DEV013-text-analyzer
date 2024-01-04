@@ -8,16 +8,16 @@
 a {
   text-decoration: none;
 }
-div[data-background] {
+
+
+[data-background] {
+  background-color: black;
   position: fixed;
-  top: 0;
-  width: 100vw;
-  left: 0;
-  height: 100vh;
 }
+
 section {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: transparent;
   display: flex;
@@ -41,11 +41,10 @@ i:hover {
 }
 
 section .row {
-  top: (-50%);
-  position: relative;
   width: 100%;
   display: flex;
-  padding: 10px 0;
+  flex-direction: column;
+  margin: -20%;
   white-space: nowrap;
   font-size: 68px;
   transform: rotate(-30deg);
@@ -90,7 +89,6 @@ ul {
   color: black;
   white-space: nowrap;
   padding: 0.8rem;
-
   background: rgba(243, 243, 243, 0.761);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -110,11 +108,9 @@ ul {
 textarea[name="user-input"] {
   padding: 10px;
   border-radius: 10px;
-
   box-shadow: 50px 25px;
   text-align: auto;
-
-  background: rgba(255, 255, 255, 0.46);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.4px);
@@ -133,7 +129,6 @@ footer {
 }
 
 /*animaciones y efectos*/
-
 #reset-button::after {
   content: "";
   position: absolute;

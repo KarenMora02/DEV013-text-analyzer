@@ -16,11 +16,22 @@ const wordLengthAverage = document.querySelector(
   '[data-testid="word-length-average"]'
 );
 const resetButton = document.getElementById("reset-button");
-resetButton.addEventListener("click",function(){
-  userInput.value = ""
-  const event = new Event("input");
-  userInput.dispatchEvent(event);
-})
+resetButton.addEventListener("click", function () {
+  const iconoDeBorrado = "🫧.🧽.🧹".split(".").at(Math.round(Math.random() * 2));
+
+  const interval = setInterval(() => {
+    const length = userInput.value.length;
+    userInput.value = userInput.value.slice(0, length - 3) + iconoDeBorrado;
+
+    if (userInput.value.length <= 3) {
+      clearInterval(interval);
+      userInput.value = "";
+      const event = new Event("input");
+      userInput.dispatchEvent(event);
+    }
+  }, 30);
+});
+
 if (userInput === null) {
   alert("ups, No encontre la entrada del usuario");
 }

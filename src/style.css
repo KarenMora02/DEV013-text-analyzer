@@ -11,7 +11,7 @@ a {
 
 
 [data-background] {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   position: fixed;
 }
 
@@ -27,15 +27,15 @@ section {
 }
 
 i {
-  color: rgba(0, 0, 0, 0.5);
-  transition: 1s;
+  color: rgba(0, 0, 0, 0.03);
+  transition: 2s;
   padding: 0 5px;
   user-select: none;
   cursor: default;
 }
 
 i:hover {
-  transition: 0;
+  transition: 60ms;
   color: #0f0;
   text-shadow: 0 0 120px #0f0;
 }
@@ -52,9 +52,18 @@ section .row {
 
 header,
 form {
+ 
   display: grid;
   place-items: center;
   gap: 1rem;
+}
+form{
+  margin-top: 5rem;  
+}
+h1{
+position: relative;
+margin-top: 1rem;
+
 }
 
 h3 {
@@ -109,7 +118,7 @@ textarea[name="user-input"] {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 50px 25px;
-  text-align: auto;
+  text-align: center;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -118,7 +127,7 @@ textarea[name="user-input"] {
   border: 1px solid rgba(255, 255, 255, 0.29);
   width: 70%;
   height: 300px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 footer {
@@ -128,7 +137,7 @@ footer {
   text-align: left;
 }
 
-/*animaciones y efectos*/
+
 #reset-button::after {
   content: "";
   position: absolute;

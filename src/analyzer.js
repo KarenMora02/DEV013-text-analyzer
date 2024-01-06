@@ -34,7 +34,7 @@ const analyzer = {
     if (Number.isNaN(longitudMedia)) {
       return 0;
     }
-    return longitudMedia;
+    return Number(longitudMedia.toFixed(2));
     //tarer la longitud de cada palabras y sumarla a una variable que inicie en 0 al final del for dividir en la cantidad de palabras
   },
   getNumberCount: (text) => {
